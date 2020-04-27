@@ -10,5 +10,10 @@
 
 <h2>Comments</h2>
 <%@post.comments.each do |comment|%>
+<%=comment.content%>
+<%end%>
+
+<h2>Comments</h2>
+<%@post.comments.each do |comment|%>
 <%=comment.user.username%> <%=comment.content%>
 <%end%>
