@@ -9,6 +9,6 @@
 <%end%>
 
 <h2>Comments</h2>
-<%=@post.comments.each do |comment|%>
+<%@post.comments.each do |comment|%>
 <%=link_to comment.user.username, user_path(comment.user)%> <%=comment.content%>
 <%end%>
