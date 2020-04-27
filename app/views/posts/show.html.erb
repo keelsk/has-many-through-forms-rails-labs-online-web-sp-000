@@ -1,1 +1,6 @@
 
+<%= form_for post.comment do |f|%>
+<%= f.label "Comment"%>
+<%= f.text_area :comment_content%>
+<%= f.submit%>
+<% end %>
